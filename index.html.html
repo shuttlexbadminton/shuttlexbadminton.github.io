@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shuttle X Badminton Academy</title>
+<meta name="description" content="Badminton coaching for fitness, skills and game strategy. All ages, all levels.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#02050d;--bg2:#06122b;--panel:#071633;--line:#1a2a50;--text:#e6ecff;--mute:#9db0d8;--blue:#4da3ff;--green:#3dffa0;--ink:#02050d;
+color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--text);font:400 17px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.display{font-family:Anton,Impact,"Arial Narrow",sans-serif;font-weight:400;text-transform:uppercase;line-height:.95;margin:0}
+.grad{background:linear-gradient(90deg,var(--blue),var(--green));-webkit-background-clip:text;background-clip:text;color:transparent}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:rgba(2,5,13,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:6;background:var(--bg)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 22px;max-width:1040px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:Anton,Impact,sans-serif;font-size:24px;letter-spacing:.04em}
+.brand b{color:var(--green);font-weight:400}
+nav{display:flex;gap:22px;font-size:15px}
+nav a{text-decoration:none;color:var(--mute)}
+nav a:hover{color:var(--text)}
+.btn{display:inline-block;background:var(--green);color:var(--ink);font-weight:600;text-decoration:none;padding:15px 26px;border-radius:2px}
+.btn:hover{background:#7dffbd}
+.btn.ghost{background:transparent;color:var(--text);border:1px solid var(--blue)}
+.btn.ghost:hover{background:rgba(77,163,255,.12)}
+.hero{position:relative;overflow:hidden;padding:84px 0 96px;background:radial-gradient(900px 420px at 50% -80px,#0f2d6b 0,transparent 70%),radial-gradient(700px 300px at 50% 110%,rgba(61,255,160,.14),transparent 70%)}
+.hero .x{position:absolute;right:-60px;top:50%;width:520px;height:520px;transform:translateY(-50%);opacity:.9;pointer-events:none}
+.hero h1{font-size:clamp(64px,13vw,150px)}
+.hero p{max-width:34ch;font-size:20px;color:var(--mute);margin:26px 0 34px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;position:relative}
+section{padding:80px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(40px,7vw,72px);margin-bottom:28px}
+.lead{max-width:60ch;color:var(--mute);font-size:19px}
+.lead strong{color:var(--green);font-weight:500}
+.programs{list-style:none;margin:36px 0 0;padding:0;border-top:1px solid var(--line)}
+.programs li{display:flex;gap:24px;align-items:baseline;padding:22px 0;border-bottom:1px solid var(--line);font-size:clamp(20px,3vw,28px);font-weight:500}
+.programs span{color:var(--mute);font-size:16px;font-weight:400;margin-left:auto;text-align:right;max-width:26ch}
+.who{display:grid;gap:14px;margin-top:36px}
+.who div{display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:center;background:var(--panel);border:1px solid var(--line);padding:22px 24px}
+.who h3{margin:0;font-family:Anton,Impact,sans-serif;font-weight:400;font-size:30px;color:var(--green);letter-spacing:.02em}
+.who p{margin:0;color:var(--text)}
+.why{display:grid;gap:14px;margin-top:36px;padding:0;list-style:none}
+.why li{display:flex;gap:16px;align-items:center;background:var(--panel);border:1px solid var(--line);padding:20px 24px;font-size:19px;font-weight:500}
+.why svg{flex:none}
+.contact{text-align:center;background:radial-gradient(800px 320px at 50% 120%,rgba(61,255,160,.16),transparent 70%)}
+.contact .lead{margin:0 auto 32px}
+.contact .cta{justify-content:center}
+.phone{display:block;font-family:Anton,Impact,sans-serif;font-size:clamp(34px,7vw,64px);letter-spacing:.03em;text-decoration:none;margin-bottom:28px}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--mute);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+@media(max-width:720px){
+nav{display:none}
+.hero{padding:56px 0 72px}
+.hero .x{width:340px;height:340px;right:-120px;top:18%;opacity:.35}
+.programs li{flex-direction:column;gap:4px}
+.programs span{margin:0;text-align:left;max-width:none}
+.who div{grid-template-columns:1fr;gap:6px}
+section{padding:60px 0}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4da3ff"/><stop offset="1" stop-color="#3dffa0"/></linearGradient>
+<symbol id="logo" viewBox="0 0 100 100">
+<circle cx="24" cy="76" r="9" fill="#fff"/>
+<path d="M30 68 L52 30 L62 24 C74 28 84 40 90 54 L82 60 L40 80 Z M40 60 L58 32 M50 70 L74 44" fill="none" stroke="#fff" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M12 18 L88 92" stroke="url(#g)" stroke-width="7" stroke-linecap="round"/>
+</symbol>
+</defs>
+</svg>
+
+<header>
+<div class="bar">
+<a class="brand" href="#top" aria-label="Shuttle X Badminton Academy home"><svg width="34" height="34" aria-hidden="true"><use href="#logo"/></svg><span>SHUTTLE <b>X</b></span></a>
+<nav aria-label="Main"><a href="#about">About</a><a href="#programs">Programs</a><a href="#who">Who it’s for</a><a href="#contact">Contact</a></nav>
+<a class="btn" href="tel:+94761503887">Call us</a>
+</div>
+</header>
+
+<main id="top">
+<div class="hero">
+<svg class="x" aria-hidden="true"><use href="#logo"/></svg>
+<div class="wrap">
+<h1 class="display">Smash<br>your <span class="grad">limits</span></h1>
+<p>Badminton coaching for fitness, skills and game strategy. All ages. All levels.</p>
+<div class="cta">
+<a class="btn" href="tel:+94761503887">Book your first session</a>
+<a class="btn ghost" href="https://instagram.com/shuttlexbadminton" rel="noopener">Message us on Instagram</a>
+</div>
+</div>
+</div>
+
+<section id="about">
+<div class="wrap">
+<h2 class="display">Who we <span class="grad">are</span></h2>
+<p class="lead">Shuttle X Badminton Academy offers dedicated coaching focused on <strong>health</strong>, <strong>fitness</strong> and <strong>body maintenance</strong>. We welcome all age groups, from beginners to seniors.</p>
+</div>
+</section>
+
+<section id="programs">
+<div class="wrap">
+<h2 class="display">What we <span class="grad">do</span></h2>
+<ul class="programs">
+<li>Individual &amp; Group Training</li>
+<li>Weight Loss &amp; Body Maintenance</li>
+<li>Skill Development &amp; Game Strategy</li>
+<li>Fitness &amp; Conditioning</li>
+</ul>
+</div>
+</section>
+
+<section id="who">
+<div class="wrap">
+<h2 class="display">Never too early.<br><span class="grad">Never too late.</span></h2>
+<div class="who">
+<div><h3>Kids</h3><p>Learn the fundamentals and fall in love with the game.</p></div>
+<div><h3>Adults</h3><p>Get fit, stay sharp and play smarter.</p></div>
+<div><h3>Seniors</h3><p>Stay active, healthy and social.</p></div>
+</div>
+</div>
+</section>
+
+<section id="why">
+<div class="wrap">
+<h2 class="display">Reasons to <span class="grad">join us</span></h2>
+<ul class="why">
+<li><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="13" fill="none" stroke="#3dffa0" stroke-width="2"/><path d="M9 15.5l4 4 8-9" fill="none" stroke="#3dffa0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Personalized attention &amp; care</li>
+<li><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="13" fill="none" stroke="#3dffa0" stroke-width="2"/><path d="M9 15.5l4 4 8-9" fill="none" stroke="#3dffa0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Programs for all ages, kids to seniors</li>
+<li><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="13" fill="none" stroke="#3dffa0" stroke-width="2"/><path d="M9 15.5l4 4 8-9" fill="none" stroke="#3dffa0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Stay active &amp; healthy</li>
+</ul>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="wrap">
+<h2 class="display">Book your <span class="grad">session</span></h2>
+<p class="lead">Call us or send a message on Instagram to book your first session.</p>
+<a class="phone grad" href="tel:+94761503887">+94 76 150 3887</a>
+<div class="cta">
+<a class="btn" href="tel:+94761503887">Call now</a>
+<a class="btn ghost" href="https://instagram.com/shuttlexbadminton" rel="noopener">@shuttlexbadminton</a>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap"><span>© Shuttle X Badminton Academy</span><span>Smash your limits.</span></div>
+</footer>
+</body>
+</html>
