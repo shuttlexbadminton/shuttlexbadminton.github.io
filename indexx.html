@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shuttle X Badminton Academy</title>
+<meta name="description" content="Badminton coaching for fitness, skills and game strategy. All ages, all levels.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#02050d;--bg2:#06122b;--panel:#071633;--line:#1a2a50;--text:#e6ecff;--mute:#9db0d8;--blue:#4da3ff;--green:#3dffa0;--ink:#02050d;
+color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--text);font:400 17px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.display{font-family:Anton,Impact,"Arial Narrow",sans-serif;font-weight:400;text-transform:uppercase;line-height:.95;margin:0}
+.grad{background:linear-gradient(90deg,var(--blue),var(--green));-webkit-background-clip:text;background-clip:text;color:transparent}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:rgba(2,5,13,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:6;background:var(--bg)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 22px;max-width:1040px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:Anton,Impact,sans-serif;font-size:24px;letter-spacing:.04em}
+.brand b{color:var(--green);font-weight:400}
+nav{display:flex;gap:22px;font-size:15px}
+nav a{text-decoration:none;color:var(--mute)}
+nav a:hover{color:var(--text)}
+.btn{display:inline-block;background:var(--green);color:var(--ink);font-weight:600;text-decoration:none;padding:15px 26px;border-radius:2px}
+.btn:hover{background:#7dffbd}
+.btn.ghost{background:transparent;color:var(--text);border:1px solid var(--blue)}
+.btn.ghost:hover{background:rgba(77,163,255,.12)}
+.btn.wa{background:#25d366;color:#02050d}
+.btn.wa:hover{background:#5ee98f}
+.wa-float{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:7;background:#25d366;color:#02050d;font-weight:600;text-decoration:none;padding:14px 20px;border-radius:999px;box-shadow:0 6px 20px rgba(0,0,0,.4)}
+.hero{position:relative;overflow:hidden;padding:84px 0 96px;background:radial-gradient(900px 420px at 50% -80px,#0f2d6b 0,transparent 70%),radial-gradient(700px 300px at 50% 110%,rgba(61,255,160,.14),transparent 70%)}
+.hero .x{position:absolute;right:20px;top:50%;width:380px;height:380px;transform:translateY(-50%);opacity:.6;pointer-events:none}
+.hero h1{font-size:clamp(64px,13vw,150px)}
+.hero p{max-width:34ch;font-size:20px;color:var(--mute);margin:26px 0 34px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;position:relative}
+section{padding:80px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(40px,7vw,72px);margin-bottom:28px}
+.lead{max-width:60ch;color:var(--mute);font-size:19px}
+.lead strong{color:var(--green);font-weight:500}
+.programs{list-style:none;margin:36px 0 0;padding:0;border-top:1px solid var(--line)}
+.programs li{display:flex;gap:24px;align-items:baseline;padding:22px 0;border-bottom:1px solid var(--line);font-size:clamp(20px,3vw,28px);font-weight:500}
+.programs span{color:var(--mute);font-size:16px;font-weight:400;margin-left:auto;text-align:right;max-width:26ch}
+.who{display:grid;gap:14px;margin-top:36px}
+.who div{display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:center;background:var(--panel);border:1px solid var(--line);padding:22px 24px}
+.who h3{margin:0;font-family:Anton,Impact,sans-serif;font-weight:400;font-size:30px;color:var(--green);letter-spacing:.02em}
+.who p{margin:0;color:var(--text)}
+.why{display:grid;gap:14px;margin-top:36px;padding:0;list-style:none}
+.why li{display:flex;gap:16px;align-items:center;background:var(--panel);border:1px solid var(--line);padding:20px 24px;font-size:19px;font-weight:500}
+.why svg{flex:none}
+.contact{text-align:center;background:radial-gradient(800px 320px at 50% 120%,rgba(61,255,160,.16),transparent 70%)}
+.contact .lead{margin:0 auto 32px}
+.contact .cta{justify-content:center}
+.phone{display:block;font-family:Anton,Impact,sans-serif;font-size:clamp(34px,7vw,64px);letter-spacing:.03em;text-decoration:none;margin-bottom:28px}
+.areas{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
+.areas span{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--green);padding:20px 30px;font-size:clamp(22px,4vw,30px);font-weight:600}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--mute);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+@media(max-width:720px){
+nav{display:none}
+.hero{padding:56px 0 72px}
+.hero .x{width:250px;height:250px;right:-60px;top:14%;opacity:.3}
+.programs li{flex-direction:column;gap:4px}
+.programs span{margin:0;text-align:left;max-width:none}
+.who div{grid-template-columns:1fr;gap:6px}
+section{padding:60px 0}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<linearGradient id="g" gradientUnits="userSpaceOnUse" x1="79" y1="192" x2="1151" y2="1264"><stop offset="0" stop-color="#4da3ff"/><stop offset="1" stop-color="#3dffa0"/></linearGradient>
+<symbol id="logo" viewBox="69 47 1230 1227">
+<path fill="#fff" fill-rule="evenodd" d="M231 1249C229 1249 226 1247 223 1247C221 1246 216 1244 212 1244C186 1240 144 1211 125 1184C118 1175 107 1154 106 1148C106 1146 104 1142 103 1139C101 1135 100 1131 100 1128C100 1126 99 1118 99 1110C97 1092 99 1062 103 1054C105 1052 106 1048 106 1046C108 1034 122 1012 139 993C154 976 185 957 205 952C208 951 212 950 215 949C223 945 276 945 284 949C288 951 292 952 294 952C296 953 300 954 303 955C313 959 311 957 293 938C263 907 262 901 286 859C290 851 298 836 303 827C305 824 308 818 310 816C311 813 315 806 317 801C320 796 327 784 333 773C338 762 344 751 346 748C349 743 354 733 360 724C390 667 401 647 401 646C401 646 402 645 402 644C403 644 406 638 409 632C414 622 421 613 423 613C424 613 428 617 433 622C438 626 445 634 450 638C460 648 471 659 473 662C474 664 471 673 467 679C466 680 464 683 463 686C462 688 460 692 459 694C457 696 452 706 448 715C443 724 438 733 436 735C434 740 432 744 434 743C436 743 452 721 462 706C478 683 485 676 489 678C493 681 537 724 537 725C537 727 531 736 522 749C517 756 509 766 505 772C494 788 483 802 476 812C472 816 468 822 466 825C464 827 460 834 456 840C452 845 446 852 444 856C441 860 438 864 436 866C434 869 429 877 423 884C418 891 412 899 410 901C401 914 392 927 392 930C392 933 393 935 402 944C415 957 416 957 429 947C434 943 444 936 452 930C459 925 468 918 472 915C476 912 484 907 489 903C494 900 502 894 506 890C511 886 517 882 519 881C522 879 529 874 536 869C543 863 551 858 554 856C557 854 562 850 564 848C567 846 575 840 582 835C589 830 599 823 603 820C607 816 613 813 615 811L620 809L642 830C654 842 665 853 666 854C672 860 671 860 621 897C602 911 597 915 597 916C598 916 599 915 601 915C602 914 606 912 609 910C612 909 620 904 628 900C635 896 646 890 651 888C656 885 663 881 666 880C674 875 678 873 681 873C683 872 732 920 732 922C732 925 724 931 710 939C701 944 693 948 692 949C691 949 684 953 678 956C671 960 641 976 612 992C562 1019 548 1027 534 1034C532 1036 521 1041 510 1047C500 1053 488 1060 483 1062C478 1064 474 1067 473 1067C469 1071 456 1076 450 1077C437 1078 430 1074 409 1053C396 1041 391 1036 389 1037C389 1037 391 1042 393 1048C399 1068 403 1097 400 1113C399 1118 398 1125 397 1128C394 1160 362 1205 330 1225C320 1231 307 1238 304 1238C304 1238 301 1239 298 1240C296 1242 290 1243 286 1244C282 1244 276 1246 273 1247C267 1250 240 1251 231 1249ZM820 855C795 832 784 821 784 819C784 816 795 810 836 788C840 785 852 778 863 772C874 767 884 761 886 760C889 759 899 753 909 747C920 742 929 736 931 735C933 735 937 732 941 730C945 728 953 723 961 720C968 716 975 712 976 711C978 710 982 708 984 707C986 706 990 704 991 703C992 702 999 699 1005 695C1011 692 1023 686 1032 681C1040 676 1050 671 1054 669C1063 664 1151 616 1179 601C1188 596 1195 592 1196 592C1198 592 1203 586 1203 585C1203 583 1185 546 1178 534C1162 506 1162 506 1159 506C1157 506 1149 511 1132 524C1119 534 1096 550 1090 554C1087 556 1082 560 1078 562C1075 565 1067 571 1061 575C1055 580 1047 586 1043 589C1039 592 1033 596 1029 599C1025 601 1020 606 1016 608C1005 617 978 636 975 638C974 639 965 646 955 653C945 660 932 670 927 673C922 677 911 685 904 690C896 696 887 702 884 705C877 710 854 727 842 736C838 739 828 746 820 752C813 757 805 762 804 763C802 764 798 767 796 769C791 773 777 783 766 791C759 796 758 795 745 782C739 775 729 766 724 761C712 750 709 747 711 743C713 741 721 733 729 728C734 725 748 714 760 705C763 702 768 699 770 697C773 695 780 690 786 686C793 681 799 676 802 674C804 673 812 667 820 661C828 655 837 648 841 646C847 642 857 634 882 615C890 610 898 604 901 602C910 596 915 592 942 572C956 562 969 552 971 550C974 549 983 542 992 536C1023 513 1034 505 1036 503C1040 501 1059 486 1072 477C1078 473 1084 468 1087 466C1104 455 1118 443 1119 441C1119 438 1115 431 1095 407C1065 370 1058 362 1034 336C1020 321 976 280 964 271C958 267 951 261 932 246C905 225 905 225 896 238C892 243 887 250 885 253C882 256 877 264 872 270C863 283 862 284 849 302C845 308 838 317 833 324C829 330 823 337 821 340C818 344 811 353 805 362C791 381 783 392 774 404C771 408 763 419 757 428C751 436 743 446 740 450C735 458 718 480 710 491C708 495 701 505 695 513C689 521 680 533 674 540C669 548 661 559 656 565C643 584 627 606 621 613C619 616 616 621 614 622C613 624 610 628 607 631L601 637L592 629C555 593 549 586 552 583C554 582 556 578 558 576C561 571 571 557 583 541C585 539 588 534 590 531C593 528 598 521 602 516C605 511 609 505 610 504C611 503 614 498 617 494C624 485 640 463 654 444C659 437 666 427 670 422C674 417 679 409 683 405C686 400 692 392 696 387C700 381 704 375 706 374C707 372 711 366 716 359C721 353 726 345 728 342C730 340 733 336 734 334C737 331 750 313 766 291C769 286 776 277 780 272C784 266 788 260 789 258C790 256 793 253 794 251C796 249 802 242 807 235C812 228 820 218 823 213C844 185 843 186 831 179C803 162 782 151 768 145C759 141 760 140 750 159C741 176 739 179 729 197C725 205 718 218 714 225C710 233 705 242 703 246C701 249 697 256 695 259C693 263 690 270 687 274C685 279 681 285 680 288C674 299 667 311 661 322C658 329 654 336 652 340C650 344 648 348 646 349C645 351 644 353 644 353C644 354 587 459 573 485C570 490 565 499 562 504C540 546 530 562 526 562C525 562 510 547 497 534C492 528 485 522 482 519C474 512 475 511 488 487C491 482 495 474 497 470C502 461 563 349 565 346C567 342 577 324 579 318C580 316 582 313 584 311C585 310 586 308 586 308C586 307 589 301 594 293C598 285 604 274 606 269C609 264 612 258 614 256C615 254 616 252 616 252C616 251 618 246 621 241C628 229 693 111 699 100C706 84 709 79 713 74C727 55 744 52 769 64C817 87 832 95 840 99C844 102 849 104 850 105C851 106 856 109 861 111C869 116 872 117 888 127C895 131 921 148 947 166C962 176 967 180 1008 212C1028 228 1072 271 1091 292C1097 298 1107 309 1114 316C1121 324 1132 336 1137 343C1166 379 1176 392 1181 400C1184 404 1187 409 1189 412C1192 416 1212 448 1218 456C1219 458 1226 470 1232 480C1238 492 1245 504 1248 508C1252 515 1254 519 1263 539C1266 544 1272 557 1277 567C1290 594 1291 600 1287 614C1284 623 1276 631 1258 641C1239 651 1236 652 1210 667C1137 707 1096 729 1089 733C1085 735 1079 738 1075 740C1072 742 1064 747 1056 750C1049 754 1041 759 1038 760C1030 765 1027 767 1021 770C1008 777 999 782 988 788C981 791 976 794 975 794C975 794 973 795 971 797C968 799 966 800 966 800C965 800 953 807 893 839C878 847 866 854 865 854C865 854 863 855 862 856C859 858 840 868 837 869C835 869 833 868 820 855Z"/>
+<path fill="url(#g)" fill-rule="evenodd" d="M1086 1264C1073 1262 1064 1256 1045 1237C977 1169 910 1102 909 1100C908 1099 882 1074 852 1043C795 986 666 856 664 854C662 852 616 806 591 782C577 768 563 754 560 751C551 741 505 695 487 677C478 669 468 658 464 654C460 651 453 644 448 639C444 634 438 629 436 626C433 624 414 605 394 585C357 548 244 436 236 428C229 422 206 399 147 341C87 281 88 282 82 265C79 255 78 248 80 242C81 240 83 235 84 231C91 212 100 203 117 197C133 191 144 191 151 195C153 197 158 199 162 200C171 203 173 205 210 242C224 256 270 303 314 347C358 391 413 446 436 470C459 494 482 517 486 521C491 525 498 532 501 536C505 540 513 548 518 552C523 557 537 571 548 582C564 598 659 695 671 706C682 717 726 760 732 766C736 770 746 780 755 789C763 798 783 818 800 834C816 849 831 864 833 866C841 875 1000 1034 1070 1104C1155 1188 1152 1183 1151 1209C1151 1247 1125 1269 1086 1264Z"/>
+</symbol>
+</defs>
+</svg>
+
+<header>
+<div class="bar">
+<a class="brand" href="#top" aria-label="Shuttle X Badminton Academy home"><svg width="34" height="34" aria-hidden="true"><use href="#logo"/></svg><span>SHUTTLE <b>X</b></span></a>
+<nav aria-label="Main"><a href="#about">About</a><a href="#programs">Programs</a><a href="#who">Who it’s for</a><a href="#areas">Areas</a><a href="#contact">Contact</a></nav>
+<a class="btn" href="tel:+94761503887">Call us</a>
+</div>
+</header>
+
+<main id="top">
+<div class="hero">
+<svg class="x" aria-hidden="true"><use href="#logo"/></svg>
+<div class="wrap">
+<h1 class="display">Smash<br>your <span class="grad">limits</span></h1>
+<p>Badminton coaching for fitness, skills and game strategy. All ages. All levels.</p>
+<div class="cta">
+<a class="btn" href="tel:+94761503887">Book your first session</a>
+<a class="btn" href="https://instagram.com/shuttlexbadminton" rel="noopener">Message us on Instagram</a>
+<a class="btn wa" href="https://wa.me/94761503887?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20Shuttle%20X%20Badminton%20Academy." rel="noopener">Chat on WhatsApp</a>
+</div>
+</div>
+</div>
+
+<section id="about">
+<div class="wrap">
+<h2 class="display">Who we <span class="grad">are</span></h2>
+<p class="lead">Shuttle X Badminton Academy offers dedicated coaching focused on <strong>health</strong>, <strong>fitness</strong> and <strong>body maintenance</strong>. We welcome all age groups, from beginners to seniors.</p>
+<p class="lead" style="margin-top:22px;line-height:1.9"><strong>Founder</strong> – Nashwan Rawlins<br><strong>Co-Founder</strong> – Hansani Dharmasooriya</p>
+</div>
+</section>
+
+<section id="programs">
+<div class="wrap">
+<h2 class="display">What we <span class="grad">do</span></h2>
+<ul class="programs">
+<li>Individual &amp; Group Training</li>
+<li>Weight Loss &amp; Body Maintenance</li>
+<li>Skill Development &amp; Game Strategy</li>
+<li>Fitness &amp; Conditioning</li>
+</ul>
+</div>
+</section>
+
+<section id="who">
+<div class="wrap">
+<h2 class="display">Never too early.<br><span class="grad">Never too late.</span></h2>
+<div class="who">
+<div><h3>Kids</h3><p>Learn the fundamentals and fall in love with the game.</p></div>
+<div><h3>Adults</h3><p>Get fit, stay sharp and play smarter.</p></div>
+<div><h3>Seniors</h3><p>Stay active, healthy and social.</p></div>
+</div>
+</div>
+</section>
+
+<section id="why">
+<div class="wrap">
+<h2 class="display">Reasons to <span class="grad">join us</span></h2>
+<ul class="why">
+<li><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="13" fill="none" stroke="#3dffa0" stroke-width="2"/><path d="M9 15.5l4 4 8-9" fill="none" stroke="#3dffa0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Personalized attention &amp; care</li>
+<li><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="13" fill="none" stroke="#3dffa0" stroke-width="2"/><path d="M9 15.5l4 4 8-9" fill="none" stroke="#3dffa0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Programs for all ages, kids to seniors</li>
+<li><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="13" fill="none" stroke="#3dffa0" stroke-width="2"/><path d="M9 15.5l4 4 8-9" fill="none" stroke="#3dffa0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Stay active &amp; healthy</li>
+</ul>
+</div>
+</section>
+
+<section id="areas">
+<div class="wrap">
+<h2 class="display">Areas we <span class="grad">cover</span></h2>
+<div class="areas"><span>Kottawa</span><span>Colombo 1 – 15</span></div>
+<p class="lead" style="margin-top:26px">Not sure if we cover your area? Message us and we’ll let you know.</p>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="wrap">
+<h2 class="display">Book your <span class="grad">session</span></h2>
+<p class="lead">Call us or send a message on Instagram to book your first session.</p>
+<a class="phone grad" href="tel:+94761503887">+94 76 150 3887</a>
+<div class="cta">
+<a class="btn" href="tel:+94761503887">Call now</a>
+<a class="btn wa" href="https://wa.me/94761503887?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20Shuttle%20X%20Badminton%20Academy." rel="noopener">Chat on WhatsApp</a>
+<a class="btn" href="https://instagram.com/shuttlexbadminton" rel="noopener">@shuttlexbadminton</a>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap"><span>© Shuttle X Badminton Academy · Founder: Nashwan Rawlins · Co-Founder: Hansani Dharmasooriya</span><span>Smash your limits.</span></div>
+</footer>
+<a class="wa-float" href="https://wa.me/94761503887?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20Shuttle%20X%20Badminton%20Academy." rel="noopener" aria-label="Chat on WhatsApp">Chat on WhatsApp</a>
+</body>
+</html>
